@@ -328,7 +328,7 @@ apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rs
 apt -y install nginx php php-fpm php-cli php-mysql libxml-parser-perl
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-curl ${repo}ssh/nginx.conf > /etc/nginx/nginx.conf
+curl https://raw.githubusercontent.com/Andyyuda/P/main/ssh/nginx.conf > /etc/nginx/nginx.conf
 #curl ${repo}ssh/vps.conf > /etc/nginx/conf.d/vps.conf
 sed -i 's/listen = \/var\/run\/php-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php/fpm/pool.d/www.conf
 mkdir -p /var/www/html
@@ -352,7 +352,7 @@ END
 
 # install badvpn
 cd
-wget -O /usr/sbin/badvpn "${repo}ssh/badvpn" >/dev/null 2>&1
+wget -O /usr/sbin/badvpn "https://raw.githubusercontent.com/Andyyuda/P/main/ssh/badvpn" >/dev/null 2>&1
 chmod +x /usr/sbin/badvpn > /dev/null 2>&1
 wget -q -O /etc/systemd/system/badvpn1.service "${repo}ssh/badvpn1.service" >/dev/null 2>&1
 wget -q -O /etc/systemd/system/badvpn2.service "${repo}ssh/badvpn2.service" >/dev/null 2>&1
@@ -814,7 +814,7 @@ gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/
 curl -sL "$gotop_link" -o /tmp/gotop.deb
 dpkg -i /tmp/gotop.deb
 
-wget -q https://raw.githubusercontent.com/cibut2d/c/main/menu/update.sh && chmod +x update.sh && ./update.sh
+wget -q https://raw.githubusercontent.com/cibut2d/c/main/update.sh && chmod +x update.sh && ./update.sh
 
 clear
 } 
