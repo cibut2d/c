@@ -1,6 +1,6 @@
 # root all vps
 
-# 🛠️ andyroot.sh
+# 🛠️ julakroot.sh
 
 Script ini digunakan untuk [jelaskan fungsi script-nya secara singkat, misalnya: "setup akses root" atau "instalasi otomatis tools tertentu"].
 
@@ -11,6 +11,6 @@ Script ini digunakan untuk [jelaskan fungsi script-nya secara singkat, misalnya:
 Salin dan jalankan perintah ini di terminal (Linux / VPS):
 
 ```bash
-wget https://raw.githubusercontent.com/Andyyuda/P/main/andyroot.sh -O andyroot.sh
-chmod +x andyroot.sh
-./andyroot.sh
+wget https://raw.githubusercontent.com/cibut2d/c/main/julakroot.sh -O julakroot.sh
+chmod +x julakroot.sh
+./julakroot.sh
