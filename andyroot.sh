@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By SL
+# Mod By Julak
 
 # Menulis konfigurasi langsung ke /etc/ssh/sshd_config
 cat > /etc/ssh/sshd_config <<EOF
